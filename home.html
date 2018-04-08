@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Product" lang="ko">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=2">
+    <!-- [NIM2] calendar.css 추가 -->
+    <link rel="stylesheet" type="text/css" href="css/calendar.css?v=2">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="fragment" content="!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--[if lte IE 8]>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="content-script-type" content="text/javascript">
+
+    <meta name="title" content="님지모">
+    <meta name="description" content="님지모는 국회의원 일정 공유 서비스입니다.">
+    <meta name="keywords" content="님지모,님지금모하심,국회의원,응원,후원">
+    <meta name="author" content="님지모" />
+    <meta name="robots" content="index,follow" />
+
+    <meta itemprop="name" content="님지모">
+    <meta itemprop="description" content="님지모는 국회의원 일정 공유 서비스입니다.">
+    <meta itemprop="image" content="https://www.nimjimo.com/images/logo.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@nimjimo">
+    <meta name="twitter:title" content="님지모">
+    <meta name="twitter:description" content="님지모는 국회의원 일정 공유 서비스입니다.">
+    <meta name="twitter:creator" content="@nimjimo">
+    <meta name="twitter:image" content="https://www.nimjimo.com/images/logo.png">
+
+    <meta property="og:site_name" content="님지모" />
+    <meta property="og:title" content="님지모" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.nimjimo.com" />
+    <meta property="og:image" content="https://www.nimjimo.com/images/logo.png" />
+    <meta property="og:description" content="님지모는 국회의원 일정 공유 서비스입니다." />
+    <meta property="article:published_time" content="" />
+    <meta property="article:modified_time" content="" />
+
+    <title>님지모</title>
+    <link rel="icon" sizes="32x32" href="favicon.ico">
+    <link rel="alternate" href="https://www.nimjimo.com/" hreflang="ko" />
+</head>
+<body>
+<div class="body-inner">
+    <div id="menu">
+        <a href='/'><img id="menu-logo" src="images/logo.png"><div id="menu-title">님지모</div></a>
+        <div id="menu-message-rank-desktop" class="menu-item btn-scrolls">응원 순위</div>
+        <div id="menu-search-send-message-desktop" class="menu-item btn-scrolls">의원찾고 응원하기</div>
+        <div id="menu-user-messages-desktop" class="menu-item btn-scrolls">응원 현황</div>
+        <a class="preparing-service" href='/login' style='float:right;'><div id='menu-login-desktop' class='menu-item'>국회의원 로그인</div></a>
+        <img id="menu-btn-mobile" src="images/menu.png">
+    </div>
+    <div id="mobile-menu">
+        <ul>
+            <li id="menu-message-rank-mobile" class="menu-item btn-scrolls">응원 순위</li>
+            <li id="menu-search-send-message-mobile" class="menu-item btn-scrolls">의원찾고 응원하기</li>
+            <li id="menu-user-messages-mobile" class="menu-item btn-scrolls">응원 현황</li>
+            <a class="preparing-service" href="/login"><li id='menu-login-mobile' class='menu-item'>국회의원 로그인</li></a>
+        </ul>
+    </div>
+
+    <div style="position:absolute;top:0;left:0;right:0;bottom:0;">
+        <div class="body-inner-main" style="text-align:center;">
+            <div id="title"><img id="logo" src="images/hey_logo.jpeg?v=2" alt="님지모" title="님지모"></div>
+            <div id="description">
+                <strong>님지모</strong>는 국회의원 일정 공유 서비스입니다.<br><br>
+                내 손으로 뽑은 우리 지역 국회의원<br>
+                일정도 확인해보시고 타 지역 국회의원들의 일정도 간편하게 확인해 보세요.<br>
+                그리고 열심히 일하는 국회의원에게는 칭찬과 응원 댓글을 남겨보세요.<br>
+            </div>
+
+            <input id="btn-scrollto-search" type="button" value="의원 찾고 응원하기 ">
+
+            <div id="nim-zzang-title" class="sub-title">응원 순위 - 님짱</div>
+            <div class="cards-wrapper">
+                <div class="cards" data-id="111">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/111.jpg" alt="박주민" title="박주민">
+                    <div class="cards-rank">1</div>
+                    <div class="cards-right">
+                        <div class="cards-name">박주민</div>
+                        <div class="cards-party">더불어민주당</div>
+                        <div class="cards-borough">서울 은평구갑</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>935762</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="1">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/1.jpg" alt="강병원" title="강병원">
+                    <div class="cards-rank">2</div>
+                    <div class="cards-right">
+                        <div class="cards-name">강병원</div>
+                        <div class="cards-party">더불어민주당</div>
+                        <div class="cards-borough">서울 은평구을</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>934564</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="124">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/124.jpg" alt="서영교" title="서영교">
+                    <div class="cards-rank">3</div>
+                    <div class="cards-right">
+                        <div class="cards-name">서영교</div>
+                        <div class="cards-party">무소속</div>
+                        <div class="cards-borough">서울 중랑구갑</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>920454</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="4">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/4.jpg" alt="강창일" title="강창일">
+                    <div class="cards-rank">4</div>
+                    <div class="cards-right">
+                        <div class="cards-name">강창일</div>
+                        <div class="cards-party">더불어민주당</div>
+                        <div class="cards-borough">제주 제주시갑</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>803464</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="277">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/277.jpg" alt="최도자" title="최도자">
+                    <div class="cards-rank">5</div>
+                    <div class="cards-right">
+                        <div class="cards-name">최도자</div>
+                        <div class="cards-party">국민의당</div>
+                        <div class="cards-borough">비례대표</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>703564</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="252">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/252.jpg" alt="정인화" title="정인화">
+                    <div class="cards-rank">6</div>
+                    <div class="cards-right">
+                        <div class="cards-name">정인화</div>
+                        <div class="cards-party">국민의당</div>
+                        <div class="cards-borough">전남 광양시 곡성군 구례군</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>603464</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="232">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/232.jpg" alt="임종성" title="임종성">
+                    <div class="cards-rank">7</div>
+                    <div class="cards-right">
+                        <div class="cards-name">임종성</div>
+                        <div class="cards-party">더불어민주당</div>
+                        <div class="cards-borough">경기 광주시을</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>563454</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+                <div class="cards" data-id="150">
+                    <img class="cards-photo" align="top" src="https://parkgeunhack.com/img/150.jpg" alt="안철수" title="안철수">
+                    <div class="cards-rank">8</div>
+                    <div class="cards-right">
+                        <div class="cards-name">안철수</div>
+                        <div class="cards-party">국민의당</div>
+                        <div class="cards-borough">서울 노원구병</div>
+                    </div>
+                    <div class="cards-cnt-comments">응원댓글 <span>553454</span>개</div>
+                    <input type="button" class="btn-user" value="국회의원 보기">
+                </div>
+            </div>
+            <input class="preparing-service" id="cards-more" type="button" value="더 보기">
+            <div id="search-title" class="sub-title">의원찾고 응원하기</div>
+            <div id="search"><div id="search-input-wrapper"><input id="search-input" type="text" placeholder="국회의원 이름 또는 지역구, 행정동으로 검색하세요 ex) 박주민, 은평구, 녹번동"></div><div id="search-submit"><img src="images/search.png?v=2"></div><div id="search-item-prompt"><ul></ul></div></div>
+            <div id="user-profile-empty-block"></div>
+            <div id="user-profile" data-id="">
+                <div id="user-first">
+                    <div id="user-photo-wrapper"><img id="user-photo" src="" alt="" title=""><input class="preparing-service" id="btn-request-share-schedule" type="button" value="일정 공유 요청"></div>
+                    <div class="divider"></div>
+                    <div id="user-name">박주민</div>
+                    <div id="user-party-borough">더불어민주당 - 서울 은평구갑</div>
+                    <div id="user-place"><img src="images/location.png?v=2"><span></span></div>
+                    <div id="user-phone"><img src="images/phone.png?v=2"><span></span></div>
+                    <a id="link-user-email" href="" target="_blank"><div id="user-email"><img src="images/email.png?v=2"><span></span></div></a>
+                    <a id="link-user-blog" href="" target="_blank"><div id="user-blog"><img src="images/blog.png?v=2"><span></span></div></a>
+                    <a id="link-user-twitter" href="" target="_blank"><div id="user-twitter"><img src="images/twitter.png?v=2"><span></span></div></a>
+                    <a id="link-user-facebook" href="" target="_blank"><div id="user-facebook"><img src="images/facebook.png?v=2"><span></span></div></a>
+                    <div id="user-account"><img src="images/account.png?v=2"><span></span></div>
+                </div>
+                <div id="user-second">
+                    <div id="user-cnt-support-number">935762</div>
+                    <div id="user-cnt-support-text">건의 응원 메시지가 있습니다.</div>
+                    <form id="support-form">
+                        <input type="text" id="support-name" placeholder="이름">
+                        <input type="text" id="support-message" placeholder="응원 메시지">
+                        <input type="email" id="support-email" placeholder="본인 이메일">
+                        <input type="submit" class="preparing-service" id="support-submit" value="응원 메시지 보내기">
+                    </form>
+                </div>
+            </div>
+
+            <div id="user-schedule">
+                <div id="user-schedule-title" class="sub-title"></div>
+                <!-- [NIM2] 달력 기능 추가 -->
+                <div id="user-schedule-calendar" class="calendar"></div>
+
+                <div class="user-schedule-item">
+                    <div class="user-schedule-date">오늘</div>
+                    <div class="user-schedule-content">
+                        <div class="user-schedule-pars">세부 내용
+                        </div>
+                        <div class="divider"></div>
+                        <div class="user-schedule-timeline">
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">9:00 AM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">10:05 AM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">1:10 PM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="user-schedule-item">
+                    <div class="user-schedule-date">어제</div>
+                    <div class="user-schedule-content">
+                        <div class="user-schedule-pars">세부 내용
+                        </div>
+                        <div class="divider"></div>
+                        <div class="user-schedule-timeline">
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">9:00 AM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">10:30 AM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                            <div class="user-schedule-timeline-item">
+                                <div class="user-schedule-timeline-item-left">3:00 PM</div>
+                                <div class="user-schedule-timeline-item-right">
+                                    <div class="user-schedule-timeline-item-title">내용</div>
+                                    <div class="user-schedule-timeline-item-place">장소</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="preparing-service" id="user-schedule-more" type="button" value="더 보기">
+            </div>
+
+            <div id="user-messages-title" class="sub-title">전체 응원 현황</div>
+            <div id="user-messages">
+                <div id="user-cnt-total-support-number">총 15936564</div>
+                <div id="user-cnt-total-support-text">건의 응원 메시지가 있습니다.</div>
+                <div id="user-message-items">
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[2분전]</div>
+                        <div class="user-message-name">이남수</div>
+                        <div class="user-message-loc">전남 목포시 유권자</div>
+                        <div class="user-message-content">의원님. 화이팅!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[3분전]</div>
+                        <div class="user-message-name">김민경</div>
+                        <div class="user-message-loc">서울 은평구 유권자</div>
+                        <div class="user-message-content">의원님. 응원하고 갑니다! 날씨 추운데 감기 조심하세요!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[4분전]</div>
+                        <div class="user-message-name">김동성</div>
+                        <div class="user-message-loc">전남 광양시 곡성군 구례군 유권자</div>
+                        <div class="user-message-content">항상 잘 지켜보고 있습니다. 정말 우리 지역에 계셔서 다행이라고 생각합니다. 응원하고 갑니다!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[4분전]</div>
+                        <div class="user-message-name">안성훈</div>
+                        <div class="user-message-loc">전남 목포시 유권자</div>
+                        <div class="user-message-content">화이팅입니다!!!!!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[5분전]</div>
+                        <div class="user-message-name">이일훈</div>
+                        <div class="user-message-loc">서울 노원구</div>
+                        <div class="user-message-content">법안 발의 또 하셨네요.. 와.. 후원하고 갑니다! 의원님 화이팅!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[7분전]</div>
+                        <div class="user-message-name">김수경</div>
+                        <div class="user-message-loc">경기 광주시 유권자</div>
+                        <div class="user-message-content">대박이네요. 이렇게 열심히 하시다니.. 일정보고 감동받고 갑니다. 덕분에 저도 힘이 나네요 의원님 화이팅!!</div>
+                    </div>
+                    <div class="user-message-item">
+                        <div class="user-message-created-at">[10분전]</div>
+                        <div class="user-message-name">김경수</div>
+                        <div class="user-message-loc">경남 김해시 유권자</div>
+                        <div class="user-message-content">아 진짜 쉴틈없이 일하시는군요.. 힘내시라고 후원하고 갑니다. 화이팅!!!!</div>
+                    </div>
+                </div>
+                <div id="messages-more-wrapper">
+                    <input class="preparing-service" id="messages-more" type="button" value="더 보기">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-fixed">
+        <div id="bottom-fixed-close">
+            <img src="images/close.png?v=2">
+        </div>
+        <div id="text">내가 뽑은 국회의원은 어떤 법을 얼마나 많이 발의했을까?</div>
+        <a target="_blank" href="http://likms.assembly.go.kr/bill/main.do" id="btn-check-work">확인하러 가기</a>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrollto.js?v=1"></script>
+
+<!-- members data -->
+<script type="text/javascript" src="js/members.js?v=1"></script>
+
+<!-- main js -->
+<script type="text/javascript" src="js/main.js?v=1"></script>
+
+<!-- [NIM2] calendar js 추가 -->
+<script type="text/javascript" src="js/jquery.calendar.js?v=1"></script>
+
+<!-- jquery.autocomplete -->
+<script type="text/javascript" src="js/jquery.caretposition.js?v=1"></script>
+<script type="text/javascript" src="js/jquery.sew.js?v=1"></script>
+<script type="text/javascript" src="js/jquery.autocomplete.js?v=1"></script>
+
+</body>
+</html>
